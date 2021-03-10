@@ -35,8 +35,14 @@ body {
 
 .slider__image {
   margin-top: -60px;
-  max-width: 1440px;
+  width: 100%;
+  max-height: 600px;
   margin: -60px auto 48px;
+}
+
+.slider__image img {
+  width: 100%;
+  max-height: 600px;
 }
 
 .menu__item {
@@ -52,7 +58,6 @@ body {
 }
 
 .header__cart {
-  outline: 1px solid #56d445;
   margin: auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,7 +67,6 @@ body {
 
 .wrapper_cart {
   position: relative;
-  outline: 1px solid red;
   margin-right: 8px;
 }
 
@@ -88,6 +92,11 @@ body {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.cart__order {
+  text-decoration: none;
+  color: #000000;
 }
 
 .navigation {
@@ -326,6 +335,37 @@ body {
   padding-left: 0px;
 }
 
+.footer__nav-item.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 32px;
+}
+
+.contact__item-mail {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.contact__item-phone {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contact__item-call {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: white;
+  opacity: 0.75;
+}
+
 .footer__item-link {
   color: white;
 }
@@ -333,6 +373,7 @@ body {
 .bottom__item {
   display: inline-block;
   margin-right: 24px;
+  color: #666666;
 }
 
 .bottom__item a {
