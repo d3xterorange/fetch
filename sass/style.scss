@@ -7,6 +7,7 @@ $slider_bg_color: #C4c4c4;
 body{
     font-family: 'PT Sans', sans-serif;
     color: $black;
+    overflow-x: hidden;
 }
 
 //---Стили для Header НАЧАЛО
@@ -79,7 +80,7 @@ body{
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    left: 50%;
+    left: 7%;
     top: -50%;
 }
 .cart__back{
@@ -171,6 +172,11 @@ body{
     padding-left: 16px;
     padding-top: 24px;
     position: relative;
+}
+
+.lookbook__text{
+    position: relative;
+    z-index: 1;
 }
 
 .lookbook__link {
@@ -343,5 +349,9 @@ body{
 }
 //---Стили для Footer КОНЕЦ
 
-
+@media (max-width: 319px) {
+    body {
+      background-color: blue;
+    }
+  }
 

@@ -1,6 +1,7 @@
 body {
   font-family: 'PT Sans', sans-serif;
   color: #000000;
+  overflow-x: hidden;
 }
 
 .header__container {
@@ -80,7 +81,7 @@ body {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  left: 50%;
+  left: 7%;
   top: -50%;
 }
 
@@ -190,6 +191,11 @@ body {
   padding-left: 16px;
   padding-top: 24px;
   position: relative;
+}
+
+.lookbook__text {
+  position: relative;
+  z-index: 1;
 }
 
 .lookbook__link {
@@ -378,5 +384,11 @@ body {
 
 .bottom__item a {
   color: #666666;
+}
+
+@media (max-width: 319px) {
+  body {
+    background-color: blue;
+  }
 }
 /*# sourceMappingURL=style.css.map */

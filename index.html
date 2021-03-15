@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
@@ -21,8 +23,7 @@
                 </div>
                 <div class="header__menu">
                     <ul class="menu">
-                        <li class="menu__item"><a href="" class="menu__item-link">Одежда</a></li>
-                        <li class="menu__item"><a href="" class="menu__item-link">Обувь</a></li>
+                        <li class="menu__item"><a href="" class="menu__item-link">Одежда</a></li><li class="menu__item"><a href="" class="menu__item-link">Обувь</a></li>
                         <li class="menu__item"><a href="" class="menu__item-link">Аксессуары</a></li>
                         <li class="menu__item"><a href="" class="menu__item-link">Блог</a></li>
                         <li class="menu__item"><a href="" class="menu__item-link">Магазин</a></li>
@@ -31,10 +32,12 @@
                 </div>
                 <div class="header__cart">
                     <div class="wrapper_cart">
-                        <img class="cart__img" src="img/cart.svg" alt="">
-                        <span class="cart__count"><span class="cart__back">4</span></span>
+                        <a class="cart__order" href="#">
+                            <img class="cart__img" src="img/cart.svg" alt="">
+                            <span class="cart__count"><span class="cart__back">4</span></span>
+                            Оформить заказ
+                        </a>
                     </div>
-                    <a class="cart__order" href="#">Оформить заказ</a>
                 </div>
             </div>
             <div class="slider__image">
@@ -87,8 +90,10 @@
             <section class="latest">
                 <div class="left__wrapper">
                     <div class="lookbook__block orange">
-                        <a class="lookbook__link" href="#">Лукбук, лето 2019</a>
-                        <span class="lookbook__subtitle">Стильные образы для тёплых деньков</span>
+                        <div class="lookbook__text">
+                            <a class="lookbook__link" href="#">Лукбук, лето 2019</a>
+                            <span class="lookbook__subtitle">Стильные образы для тёплых деньков</span>
+                        </div>
                         <img class="lookbook__photo" src="img/img-lookbook.png" alt="">
                     </div>
                     <div class="lookbook__block blue">
@@ -110,7 +115,7 @@
                     <div class="preorder__imgblock">
                         <a class="imgblock__title" href="#">Предзаказ: Maison Margiela Fusion</a>
                         <span class="imgblock__subtitle">От 92 000 ₽</span>
-                </div>
+                    </div>
                 </div>
             </section>
         </main>
@@ -173,4 +178,5 @@
         </footer>
     </div>
 </body>
+
 </html>
